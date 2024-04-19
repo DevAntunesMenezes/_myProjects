@@ -1,0 +1,332 @@
+/* Reset - Remove o padding, margin, text-decoration e list-style de todos os elementos,
+e define box-sizing como border-box para melhor controle de layout. */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho - Define o estilo do cabeçalho, incluindo o background color, padding e alinhamento. */
+header {
+    background-color: rgb(29, 28, 28);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo do título (h1) dentro do cabeçalho */
+header h1 {
+    color: red;
+    font-size: 2rem;
+}
+
+/* Estilo do span dentro do cabeçalho */
+header span {
+    color: white;
+}
+
+/* Estilo dos itens de lista (li) */
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Estilo das âncoras (links) */
+a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Estilo para hover nos links */
+a:hover {
+    color: red;
+    transition: 0.3s all;
+}
+
+/* Estilo da seção de contato */
+#contact {
+    border: white solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Imagem com texto - define estilo para a imagem e o texto associado */
+.image-with-text img {
+    border: solid rgb(243, 91, 91) 3px;
+    border-radius: 80px;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    margin-left: 20px;
+}
+
+/* Corpo do texto - Define o estilo geral do corpo do texto */
+body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(29, 28, 28);
+    color: aliceblue;
+    font-family: Arial;
+    font-size: 1.2rem;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Estilo para as seções com ID secao-1, secao-2, secao-3 e secao-4 */
+section#secao-1,
+section#secao-2,
+section#secao-3,
+section#secao-4 {
+    background-color: rgb(29, 28, 28);
+}
+
+/* Estilo para links dentro das seções */
+section a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+/* Estilo para títulos (h2 e h3) */
+h2,
+h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: rgb(243, 91, 91);
+    font-family: Arial cursive;
+}
+
+/* Estilo adicional para títulos h3 */
+h3 {
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(243, 91, 91);
+}
+
+/* Estilo para a classe "sobre_mim" */
+.sobre_mim {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Estilo para ícones dentro da classe "sobre_mim" */
+.sobre_mim i {
+    color: rgb(243, 91, 91);
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Estilo de responsividade para telas menores */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    .sobre_mim {
+        display: block;
+    }
+
+    .sobre_mim p {
+        margin-top: 10px;
+    }
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilo para ícones de mídias sociais */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.social-media-icons img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Estilo da seção de contato */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de título na seção de contato */
+h1 {
+    text-align: center;
+}
+
+/* Estilo para formulário na seção de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para labels no formulário */
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para campos de entrada de texto e área de texto no formulário */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilo adicional para a área de texto no formulário */
+form textarea {
+    height: 100px;
+}
+
+/* Estilo para botão no formulário */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para hover no botão do formulário */
+form button:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilo para ícones de mídias sociais */
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo para links dentro de ícones de mídias sociais */
+.social-media-icons a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para imagens dentro de ícones de mídias sociais */
+.social-media-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo para contêiner de formulário */
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.form-container {
+    flex-direction: column;
+}
+
+/* Estilo para seção de projetos */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: wrap;
+    gap: 5rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background-color: rgb(134, 133, 133);
+    padding: 5% 5% 5%;
+    border-radius: 30%;
+    text-align: center;
+    border: .2rem solid rgb(243, 91, 91);
+}
+
+/* Estilo para parágrafos dentro de caixas de serviços */
+.services-box p {
+    text-align: center;
+}
+
+/* Estilo para títulos (h4) dentro de caixas de serviços */
+.services-box h4 {
+    color: rgb(243, 91, 91);
+    font-size: 1.5rem;
+}
+
+/* Estilo para ícones dentro de caixas de serviços */
+.services-box i {
+    font-size: 7rem;
+    color: rgb(0, 119, 255);
+}
