@@ -1,0 +1,109 @@
+/* Aplica as seguintes regras a todos os elementos na página */
+* {
+    margin: 0;
+    /* Remove as margens padrão de todos os elementos */
+    padding: 0;
+    /* Remove o preenchimento padrão de todos os elementos */
+    font-family: sans-serif;
+    /* Define a fonte padrão para todos os elementos como sans-serif */
+}
+
+/* Aplica as seguintes regras ao elemento body da página */
+body {
+    min-height: 100vh;
+    /* Define a altura mínima do corpo para 100% da altura da janela de visualização */
+    background: linear-gradient(120deg, rgb(157, 157, 182), rgb(87, 82, 102));
+    /* Define um gradiente linear como plano de fundo */
+    display: flex;
+    /* Define o modelo de layout flexível para o corpo */
+    align-items: center;
+    /* Centraliza os itens flexíveis verticalmente */
+    justify-content: center;
+    /* Centraliza os itens flexíveis horizontalmente */
+}
+
+/* Aplica as seguintes regras a qualquer elemento com a classe 'relogio' */
+.relogio {
+    display: flex;
+    /* Define o modelo de layout flexível para o elemento */
+    flex-direction: column;
+    /* Define a direção flexível como coluna */
+    align-items: center;
+    /* Centraliza os itens flexíveis verticalmente */
+    justify-content: space-around;
+    /* Distribui uniformemente os itens flexíveis ao longo da linha com espaço ao redor */
+    max-width: 90%;
+    /* Define a largura máxima do elemento como 90% da largura do contêiner pai */
+    width: 550px;
+    /* Define a largura do elemento como 550px */
+    background: transparent;
+    /* Define o plano de fundo do elemento como transparente */
+    box-shadow: 0px 8px 10px greenyellow;
+    /* Adiciona uma sombra ao elemento */
+}
+
+/* Aplica as seguintes regras a qualquer div dentro de um elemento com a classe 'relogio' */
+.relogio div {
+    height: auto;
+    /* Define a altura do div como automática */
+    width: 80%;
+    /* Define a largura do div como 80% da largura do contêiner pai */
+    max-width: 300px;
+    /* Define a largura máxima do div como 300px */
+    margin-bottom: 20px;
+    /* Adiciona uma margem inferior de 20px ao div */
+    display: flex;
+    /* Define o modelo de layout flexível para o div */
+    flex-direction: column;
+    /* Define a direção flexível como coluna */
+    align-items: center;
+    /* Centraliza os itens flexíveis verticalmente */
+    justify-content: center;
+    /* Centraliza os itens flexíveis horizontalmente */
+    color: white;
+    /* Define a cor do texto do div como branco */
+    background: rgb(37, 36, 36);
+    /* Define a cor de fundo do div */
+    box-shadow: rgb(37, 36, 36);
+    /* Adiciona uma sombra ao div */
+    border-radius: 7px;
+    /* Arredonda os cantos do div */
+    letter-spacing: 3px;
+    /* Adiciona um espaçamento de 3px entre as letras do texto do div */
+}
+
+/* Aplica as seguintes regras a qualquer span dentro de um elemento com a classe 'relogio' */
+.relogio span {
+    font-weight: bolder;
+    /* Define o peso da fonte do span como mais negrito */
+    font-size: 25px;
+    /* Define o tamanho da fonte do span como 25px */
+}
+
+/* Aplica as seguintes regras a qualquer div dentro de um elemento com a classe 'relogio' quando o mouse estiver sobre ele */
+.relogio div:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    /* Adiciona uma sombra ao div quando o mouse estiver sobre ele */
+}
+
+/* Aplica as seguintes regras a qualquer elemento footer na página */
+footer {
+    background-color: #333;
+    /* Define a cor de fundo do rodapé como #333 */
+    color: #fff;
+    /* Define a cor do texto do rodapé como branco */
+    text-align: center;
+    /* Centraliza o texto do rodapé */
+    padding: 10px;
+    /* Adiciona um preenchimento de 10px ao rodapé */
+    position: fixed;
+    /* Fixa a posição do rodapé */
+    left: 0;
+    /* Posiciona o rodapé à esquerda */
+    bottom: 0;
+    /* Posiciona o rodapé na parte inferior */
+    width: 100%;
+    /* Define a largura do rodapé como 100% da largura do contêiner pai */
+    font-size: 14px;
+    /* Define o tamanho da fonte do rodapé como 14px */
+}
