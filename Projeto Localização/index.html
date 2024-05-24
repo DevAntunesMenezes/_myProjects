@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/Projeto Localização/css/style.css" />
+    <title>Localização</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="lista-horizontal">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="/contato.html">Contato</a></li>
+        <li><a href="/suporte.html">Suporte</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <h1>Missão Geográfica</h1>
+    <div class="container">
+      <label for="continente">Escolha um Continente:</label>
+      <select id="continente">
+        <option value="">Selecione</option>
+        <option value="africa">África</option>
+        <option value="asia">Ásia</option>
+        <option value="europa">Europa</option>
+        <option value="america-norte">América do Norte</option>
+        <option value="america-sul">América do Sul</option>
+        <option value="oceania">Oceania</option>
+      </select>
+
+      <label for="pais">Escolha um País:</label>
+      <select id="pais" disabled>
+        <option value="">Selecione um continente primeiro</option>
+      </select>
+    </div>
+
+    <div id="info-container" class="info-container">
+      <!-- Informações sobre o país serão exibidas aqui -->
+    </div>
+    <footer>
+      <p>&copy; 2024 Criado por Antunes Menezes.</p>
+    </footer>
+
+    <script src="/Projeto Localização/js/script.js"></script>
+  </body>
+</html>

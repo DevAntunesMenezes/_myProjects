@@ -1,0 +1,134 @@
+.lista-horizontal li a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: white; /* Define a cor do texto como branco */
+}
+
+.lista-horizontal {
+  list-style-type: none; /* Remove os pontos da lista */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0; /* Remove a margem padrão */
+  display: flex; /* Coloca os itens em linha */
+}
+
+.lista-horizontal li {
+  margin-right: 50px; /* Espaçamento entre os itens */
+}
+
+/* Opcional: remover o espaçamento à direita do último item */
+.lista-horizontal li:last-child {
+  margin-right: 0;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex; /* Utiliza flexbox para o nav */
+  justify-content: center; /* Centraliza o conteúdo do nav */
+  cursor: pointer;
+}
+
+nav .lista-horizontal li:hover a {
+  color: red; /* Muda a cor do link quando o mouse passa por cima */
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.info-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.info-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.info-container p {
+  margin: 0 0 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.info-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+
+  /* Usando flexbox para layout flexível */
+  display: flex;
+}
+
+.info-container img {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.info-container p {
+  margin: 0; /* Remover margens padrão */
+  flex: 1; /* Permite que o texto flua abaixo da imagem */
+}
+
+/* Estilo para telas menores que 600px */
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%; /* Define a largura máxima como 90% da largura da tela */
+  }
+
+  .info-container {
+    flex-direction: column; /* Empilha a imagem e o texto verticalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+  .info-container img {
+    margin-right: 0; /* Remove a margem à direita da imagem */
+    margin-bottom: 20px; /* Adiciona espaço entre a imagem e o texto */
+  }
+}
